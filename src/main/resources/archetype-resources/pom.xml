@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.xzq.boot</groupId>
+  		<artifactId>com-xzq-boot-parent</artifactId>
+  		<version>1.0-Final</version>
+    </parent>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}-parent</artifactId>
+    <version>${version}</version>
+
+    <name>${artifactId} projects</name>
+    <url>http://www.xzq.com</url>
+    <packaging>pom</packaging>
+    <dependencyManagement>
+      <dependencies>
+          <dependency>
+          	<groupId>com.xzq.common</groupId>
+		    <artifactId>com-xzq-common-util</artifactId>
+		    <version>1.0-20180525-final</version>
+          </dependency>
+       </dependencies>
+    </dependencyManagement>
+    <modules>
+        <module>${artifactId}-assemble</module>
+        <module>${artifactId}-biz</module>
+        <module>${artifactId}-common</module>
+        <module>${artifactId}-dal</module>
+        <module>${artifactId}-domain</module>
+        <module>${artifactId}-facade</module>
+        <module>${artifactId}-integration</module>
+        <module>${artifactId}-test</module>
+        <module>${artifactId}-web</module>
+        <module>${artifactId}-boss</module>
+    </modules>
+</project>
